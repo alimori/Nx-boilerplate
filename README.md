@@ -27,14 +27,28 @@ A utility library contains low-level utilities used by many libraries and applic
 1. **User management**
    - System of user management, authentication and permissions
 
+   ![Getting Started](./docs/images/login.jpg)
+
+   Enter 
+   username:user1
+   password: 1234
+
+   ![Getting Started](./docs/images/landing.jpg)
+
 2. **App A**
    - A sample app named App A
+
+   ![Getting Started](./docs/images/appa.jpg)
 
 3. **App B**
    - A sample app named App B
 
+   ![Getting Started](./docs/images/appb.jpg)
+
 4. **App C**
    - A sample app named App C
+
+   ![Getting Started](./docs/images/appc.jpg)
 
 # Nx commands
 

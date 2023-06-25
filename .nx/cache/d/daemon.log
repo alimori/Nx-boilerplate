@@ -1,0 +1,50 @@
+[NX Daemon Server] - 2023-06-25T09:28:57.715Z - Started listening on: \\.\pipe\nx\C:\Users\Atiyeh\AppData\Local\Temp\0fc3fe6c412a6d320ec6\d.sock
+[NX Daemon Server] - 2023-06-25T09:28:57.719Z - [WATCHER]: Subscribed to changes within: d:\projects\nx-boilerplate
+[NX Daemon Server] - 2023-06-25T09:28:57.723Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-06-25T09:28:57.724Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-06-25T09:28:57.725Z - [REQUEST]: Client Request for Project Graph Received
+fatal: no path specified
+[NX Daemon Server] - 2023-06-25T09:28:57.895Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-06-25T09:28:57.896Z - [REQUEST]: 
+[NX Daemon Server] - 2023-06-25T09:28:57.896Z - [REQUEST]: 
+
+ >  NX   Failed to parse pnpm lockfile
+
+   Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+   
+Original error: Could not find ".modules.yaml" at "d:\projects\nx-boilerplate/node_modules/.modules.yaml"
+
+
+   Error: Could not find ".modules.yaml" at "d:\projects\nx-boilerplate/node_modules/.modules.yaml"
+    at loadPnpmHoistedDepsDefinition (d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\plugins\js\lock-file\utils\pnpm-normalizer.js:25:15)
+    at addNodes (d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:50:77)
+    at parsePnpmLockfile (d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\plugins\js\lock-file\pnpm-parser.js:13:5)
+    at parseLockFile (d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\plugins\js\lock-file\lock-file.js:77:49)
+    at d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\plugins\js\index.js:24:64
+    at Generator.next (<anonymous>)
+    at d:\projects\nx-boilerplate\.nx\installation\node_modules\tslib\tslib.js:167:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (d:\projects\nx-boilerplate\.nx\installation\node_modules\tslib\tslib.js:163:16)
+    at Object.processProjectGraph (d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\plugins\js\index.js:15:57)
+
+[NX Daemon Server] - 2023-06-25T09:28:59.024Z - Error detected when creating a project graph: Failed to process the project graph with "nx-js-graph-plugin".
+The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[NX Daemon Server] - 2023-06-25T09:28:59.024Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process the project graph with "nx-js-graph-plugin".
+The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: Failed to process the project graph with "nx-js-graph-plugin".
+The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+    at writeFileSync (node:fs:2150:5)
+    at writeLastProcessedLockfileHash (d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\plugins\js\index.js:49:28)
+    at d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\plugins\js\index.js:25:17
+    at Generator.next (<anonymous>)
+    at d:\projects\nx-boilerplate\.nx\installation\node_modules\tslib\tslib.js:167:75
+    at new Promise (<anonymous>)
+    at Object.__awaiter (d:\projects\nx-boilerplate\.nx\installation\node_modules\tslib\tslib.js:163:16)
+    at Object.processProjectGraph (d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\plugins\js\index.js:15:57)
+    at d:\projects\nx-boilerplate\.nx\installation\node_modules\nx\src\project-graph\build-project-graph.js:121:38
+    at Generator.next (<anonymous>) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[NX Daemon Server] - 2023-06-25T09:28:59.027Z - Time taken for 'hash changed files from watcher' 52.52630000002682ms
+[NX Daemon Server] - 2023-06-25T09:28:59.027Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-06-25T09:28:59.028Z - Done responding to the client null
