@@ -1,0 +1,28 @@
+<div class="flex justify-center items-center h-screen">
+  <mat-card class="w-96">
+    <mat-card-content class="pt-4">
+      <form>
+        <mat-form-field class="w-full mb-4" appearance="fill">
+          <mat-label>Username</mat-label>
+          <input name="username" matInput placeholder="Username" type="text" [(ngModel)]="username" />
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <mat-form-field class="w-full mb-4" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput name="password" placeholder="Password" type="password" [(ngModel)]="password" />
+        </mat-form-field>
+        <mat-form-field class="w-full mb-4" appearance="fill">
+          <mat-label>Otp Code</mat-label>
+          <input matInput name="otpcode" placeholder="Otp Code" type="text" [(ngModel)]="otpCode" />
+        </mat-form-field>
+        <mat-divider class="py-3"></mat-divider>
+        <button mat-raised-button color="primary" class="block w-full" (click)="login()">Login</button>
+        <div class="flex justify-center mt-4">
+          <p> You do not have account?
+            <a mat-button color="accent">Register</a>
+          </p>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

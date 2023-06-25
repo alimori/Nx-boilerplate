@@ -1,0 +1,19 @@
+.aside {
+    //position: absolute;
+   // background-color: rgb(240, 240, 255);
+    width: 20rem;
+    height: 100%;
+
+    ul {
+        padding-top: 0.5rem;
+
+        li {
+            padding: 0.6rem 0.8rem;
+        }
+
+        li:hover {
+            cursor: pointer;
+            background-color: #fff,
+        }
+    }
+}

@@ -1,0 +1,160 @@
+
+@use '@angular/material' as mat;
+@import '../../../../../assets/src/lib/assets/assets.scss';
+
+$purple-palette: (
+  50: var(--primary-50),
+  100: var(--primary-100),
+  200: var(--primary-200),
+  300: var(--primary-300),
+  400: var(--primary-400),
+  500: var(--primary-500),
+  600: var(--primary-600),
+  700: var(--primary-700),
+  800: var(--primary-800),
+  900: var(--primary-900),
+  A100: var(--primary-50),
+  A200: var(--primary-50),
+  A400: var(--primary-900),
+  A700: var(--primary-900),
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: rgba(black, 0.87),
+    A400: white,
+    A700: white,
+  )
+);
+
+$green-palette: (
+  50: var(--accent-50),
+  100: var(--accent-100),
+  200: var(--accent-200),
+  300: var(--accent-300),
+  400: var(--accent-400),
+  500: var(--accent-500),
+  600: var(--accent-600),
+  700: var(--accent-700),
+  800: var(--accent-800),
+  900: var(--accent-900),
+  A100: var(--accent-50),
+  A200: var(--accent-50),
+  A400: var(--accent-900),
+  A700: var(--accent-900),
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: rgba(black, 0.87),
+    A400: rgba(black, 0.87),
+    A700: white,
+  )
+);
+
+$warn-palette: (
+  50: var(--warn-50),
+  100:var(--warn-100),
+  200: var(--warn-200),
+  300: var(--warn-300),
+  400: var(--warn-400),
+  500: var(--warn-500),
+  600: var(--warn-600),
+  700: var(--warn-700),
+  800: var(--warn-800),
+  900: var(--warn-900),
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  )
+);
+
+$custom-typography: mat.define-typography-config($font-family: 'IRANSans');
+
+$purple-primary: mat.define-palette($purple-palette, 500, 300, 700);
+$purple-accent: mat.define-palette($green-palette, 500, 300, 700);
+$purple-warn: mat.define-palette($warn-palette, 500, 300, 700);
+$purple-theme: mat.define-light-theme((
+  color: (
+    primary: $purple-primary,
+    accent: $purple-accent,
+    warn: $purple-warn,
+  ),
+  typography: $custom-typography,
+));
+@include mat.all-component-themes($purple-theme);
+@include mat.core($custom-typography);
+
+
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    /* Colors */  
+    --primary-50: #d8f3e6;
+    --primary-100: #bbeee4;
+    --primary-200: #67ebb0;
+    --primary-300: #39e799;
+    --primary-400: #1fe58c;
+    --primary-500: #16cfaa;
+    --primary-600: #10b269;
+    --primary-700: #089f5b;
+    --primary-800: #0a7c49;
+    --primary-900: #06663b;
+
+
+    --accent-50: #faf1ff;
+    --accent-100: #f4e6fb;
+    --accent-200: #c270e7;
+    --accent-300: #c270e7;
+    --accent-400: #c270e7;
+    --accent-500: #8629b1;
+    --accent-600: #490f64;
+    --accent-700: #490f64;
+    --accent-800: #490f64;
+    --accent-900: #490f64;
+
+
+    --warn-50: #ffcdc5;
+    --warn-100: #ffcdc5;
+    --warn-200: #f0999f;
+    --warn-300: #e77179;
+    --warn-400: #f24e58;
+    --warn-500: #f83a40;
+    --warn-600: #e9313e;
+    --warn-700: #d72638;
+    --warn-800: #ca1e30;
+    --warn-900: #bb0d24;
+    
+    --white: #ffffff;
+    --black: #000000;
+  
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
